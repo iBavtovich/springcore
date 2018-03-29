@@ -41,3 +41,4 @@ Event(id=3, msg=HELLO Error, date=Wed Mar 28 21:20:23 MSK 2018, df=java.text.Sim
 Event(id=1, msg=HELLO, date=Wed Mar 28 21:20:23 MSK 2018, df=java.text.SimpleDateFormat@79fd1708)
 Event(id=3, msg=HELLO Error, date=Wed Mar 28 21:23:41 MSK 2018, df=java.text.SimpleDateFormat@79fd1708)
 Event(id=1, msg=HELLO, date=Wed Mar 28 21:23:40 MSK 2018, df=java.text.SimpleDateFormat@79fd1708)
+Event(id=2, msg=Some event for 2, date=Thu Mar 29 11:57:19 MSK 2018, df=java.text.SimpleDateFormat@79fd1708)
