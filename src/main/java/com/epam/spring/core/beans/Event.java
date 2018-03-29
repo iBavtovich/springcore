@@ -9,7 +9,9 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.text.DateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 @Component
 @Scope("prototype")
@@ -30,6 +32,13 @@ public class Event {
 
     @Autowired
     private DateFormat df;
+
+    public static boolean isDay() {
+        Date date = new Date();
+        Calendar calendar = GregorianCalendar.getInstance();
+        calendar.setTime(date);
+        return ((calendar.get(Calendar.HOUR_OF_DAY) <= 17) && (8 <= calendar.get(Calendar.HOUR_OF_DAY))) ? true : false;
+    }
 
     public Event(Date date, DateFormat df) {
         this.id = ++currentId;

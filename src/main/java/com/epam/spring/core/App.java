@@ -21,7 +21,7 @@ public class App {
     @Autowired
     private Client client;
 
-    @Resource(name = "defaultLogger")
+    @Resource(name = "#{ T(com.epam.spring.core.beans.Event).isDay() ? 'fileEventLogger' : 'consoleEventLogger'}")
     private EventLogger defaultLogger;
 
     @Resource(name = "loggersMap")
